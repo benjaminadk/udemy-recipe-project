@@ -12,7 +12,7 @@ export class DataStorageService{
                 private authService: AuthService){}
     
     storeRecipes(){
-        const token = this.authService.getToken();
+        //const token = this.authService.getToken();
         /*
         return this.httpClient.put(`https://angular-tutorial-http-3b3b6.firebaseio.com/recipes.json`,
         this.recipeService.getRecipes(), {
@@ -31,9 +31,9 @@ export class DataStorageService{
     }
     
     fetchRecipes(){
-        const token = this.authService.getToken();
+        //const token = this.authService.getToken();
         
-        this.httpClient.get<Recipe[]>(`https://angular-tutorial-http-3b3b6.firebaseio.com/recipes.json?auth=${token}`)
+        this.httpClient.get<Recipe[]>(`https://angular-tutorial-http-3b3b6.firebaseio.com/recipes.json`)
             .map(
                 (recipes) => {
                     for(let recipe of recipes){
