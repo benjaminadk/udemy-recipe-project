@@ -1,7 +1,9 @@
 # Udemy Recipe App Project
 ## Angular Tutorial
-### NGRX Branch
-- implements an ngrx(redux) store for state management
-- versus services approach for master branch
-- redux devtools works for app state as well as routing
+### SSR Branch
+- takes the NGRX Version and implements server side rendering
+- node and express
+- required additional files and packages
+- `npm start` now runs the node server
+- `npm run start:dev` spins up the dev server with `ng serve`
 

@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --host 0.0.0.0 --port 8080  --public-host $C9_HOSTNAME",
+    "start": "node server.js",
+    "start:dev": "ng serve --host 0.0.0.0 --port 8080  --public-host $C9_HOSTNAME",
     "build": "ng build",
     "build:ssr": "ng build --prod && ng build --prod --app 1 --output-hashing=none",
     "production:aot": "ng build --target=production --aot",
