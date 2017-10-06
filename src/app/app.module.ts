@@ -23,7 +23,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'my-universal-app'}),
     AppRoutingModule,
     HttpClientModule,
     ShoppingListModule,
